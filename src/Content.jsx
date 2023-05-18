@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { ProductsIndex } from "./ProductsIndex";
 import { Signup } from "./Signup";
 import { Login } from "./Login";
-
+import { Logout } from "./Logout";
 
 
 
@@ -24,6 +24,7 @@ export function Content() {
   return (
     <div>
       <Login />
+      <Logout />
       <Signup />
       <ProductsIndex products={products} />
     </div>

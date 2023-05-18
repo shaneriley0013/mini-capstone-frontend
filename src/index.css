@@ -9,3 +9,9 @@ img {
 html {
   scroll-behavior: smooth;
 }
+
+
+#root {
+  font-family: Helvetica;
+  background-image: url('/Users/admin/Desktop/Actualize/REACT APPS/mini-capstone-frontend/src/assets/buttercream-linen-background1.jpg');
+}
