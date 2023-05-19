@@ -7,6 +7,8 @@ import { Modal } from "./Modal";
 import { Signup } from "./Signup";
 import { Login } from "./Login";
 import { Logout } from "./Logout";
+import { Routes, Route } from "react-router-dom";
+import { About } from "./About";
 
 
 
@@ -50,6 +52,9 @@ export function Content() {
   
   return (
     <div>
+      <Routes>
+        <Route path="/about" element={<About />} />
+      </Routes>
       <Login />
       <Logout />
       <Signup />
