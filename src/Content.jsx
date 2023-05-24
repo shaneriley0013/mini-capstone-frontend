@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { ProductsIndex } from "./ProductsIndex";
 import { ProductsNew } from "./ProductsNew";
 import { ProductsShow } from "./ProductsShow";
+import { ProductsShowSeparate } from "./ProductsShowSeparate";
 import { Modal } from "./Modal";
 import { Signup } from "./Signup";
 import { Login } from "./Login";
@@ -84,6 +85,7 @@ export function Content() {
         <Route path="/login" element={<Login />} />
         <Route path="/products/new" element={<ProductsNew onCreateProduct={handleCreateProduct} />} />
         <Route path="/" element={<ProductsIndex products={products} onShowProduct={handleShowProduct} />} />
+        <Route path="/products/:id" element={<ProductsShowSeparate />} />
       </Routes>
       <Logout />
       

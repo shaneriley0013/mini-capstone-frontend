@@ -5,7 +5,8 @@ export function ProductsNew(props) {
   const handleSubmit = (event) => {
       event.preventDefault();
       const params = new FormData(event.target);
-      props.onCreateProduct(params, () => event.target.reset());
+      props.onCreateProduct(params);
+      window.location.href = "/";
     };
 
 
@@ -22,9 +23,12 @@ export function ProductsNew(props) {
         <div>
           Description: <input name="description" type="text" />
         </div>
-        {/* <div>
+        <div>
           Image: <input name="image" type="text" />
-        </div> */}
+        </div>
+        <div>
+          Supplier: <input name="supplier" type="text" />
+        </div>
         
         <button type="submit">Create Product</button>
       </form>
