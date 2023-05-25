@@ -35,15 +35,19 @@ export function Signup() {
         Name: <input name="name" type="text" value={name} onChange={(event) => {setName(event.target.value)}} />
           <small>{20 - name.length} characters remaining</small>
         </div>
+        <br />
         <div>
           Email: <input name="email" type="email" />
         </div>
+        <br />
         <div>
           Password: <input name="password" type="password" />
         </div>
+        <br />
         <div>
           Password confirmation: <input name="password_confirmation" type="password" />
         </div>
+        <br />
         <button type="submit">Signup</button>
       </form>
     </div>
