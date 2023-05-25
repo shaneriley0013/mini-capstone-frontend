@@ -87,7 +87,7 @@ export function Content() {
         <Route path="/" element={<ProductsIndex products={products} onShowProduct={handleShowProduct} />} />
         <Route path="/products/:id" element={<ProductsShowSeparate />} />
       </Routes>
-      <Logout />
+      
       
       
       <Modal show={isProductsShowVisible} onClose={handleClose}>

@@ -16,12 +16,13 @@ export function ProductsShowSeparate() {
   useEffect(getShowProduct, [])
   return (
     <div>
+      <img src={product.images[0] && product.images[0].url} />
       <p>id: {product.id}</p>
-      <p>title: {product.title}</p>
+      <p>title: {product.name}</p>
       <p>price: {product.price}</p>
       <p>description: {product.description}</p>
-      <p>image: {product.image}</p>
-      <p>Here is products show separate</p>
     </div>
   )
 }
+
+{/* <img src={product.images[0] && product.images[0].url} /> */}

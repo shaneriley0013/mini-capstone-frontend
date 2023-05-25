@@ -17,6 +17,7 @@ export function ProductsShow(props) {
       <p>Name: {props.product.name}</p>
       <p>Description: {props.product.description}</p>
       <p>Price: {props.product.price}</p>
+      <hr />
       <form onSubmit={handleSubmit}>
         <div>
           Name: <input defaultValue={props.product.name} name="name" type="text" />
@@ -32,6 +33,7 @@ export function ProductsShow(props) {
         </div>
         <button type="submit">Update product</button>
       </form>
+      <hr />
       <button onClick={handleClick}>Remove Product</button>
     </div>
   );
